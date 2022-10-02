@@ -3,6 +3,7 @@
     --light_blue: #9ECDD6;
     --dark-blue: #00A9C8;
     --gray: #878787;
+    --white: #fff;
 }
 html{
     box-sizing: border-box;
@@ -21,4 +22,39 @@ body{
     max-width: 1160px;
     padding: 0 20px;
     margin: 0 auto;
+}
+.head-main header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+    background-color: var(--light_blue);
+}
+.head-main header .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head-main header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.head-main header li:nth-child(2){
+    margin-left: 35px;
+}
+.head-main header a{
+    text-decoration: none;
+    color: var(--white);
+}
+.head-main header .logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
