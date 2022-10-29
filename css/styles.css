@@ -77,9 +77,93 @@ body{
     color: var(--gray);
 }
 .head-main footer{
-    height: 80vh;
+    height: 90vh;
 }
 .head-main footer img{
     width: 100%;
     height: 100%;
+}
+.stock-section{
+    margin-top: 100px;
+}
+.stock-section .container{
+    border: 1.5px solid #EEEEEE;
+    border-radius: 30px;
+    padding: 25px;
+}
+.stock-section .container > .title{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--gray);
+}
+.stock-section .cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.stock-section .card{
+    display: inline-block;
+    border: 1.5px solid #E5E5E5;
+    border-radius: 20px;
+}
+.stock-section .card img{
+    height: 340px;
+}
+.stock-section .card .words{
+    padding: 0px 20px 20px 20px;
+}
+.stock-section .words .title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--gray);
+}
+.stock-section .words .price{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--gray);
+    margin: 0;
+    margin-bottom: 10px;
+}
+.stock-section .words .price span{
+    font-weight: normal;
+    margin-left: 10px;
+    position: relative;
+}
+.stock-section .words .price span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--gray);
+}
+.stock-section .words .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.stock-section .words button{
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.stock-section .words .see_button{
+    border: 1.5px solid #C4C4C4;
+    color: rgba(196, 196, 196, 0.9);
+    background-color: var(--white);
+}
+.stock-section .words .tocart_button{
+    background-color: var(--dark-blue);
+    color: #fff;
 }
